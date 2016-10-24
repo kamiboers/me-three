@@ -1,0 +1,46 @@
+.page-wrapper {
+  box-sizing: border-box;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+.parallax {
+  min-height: 100vh;
+  overflow-x: hidden;
+  -webkit-perspective: 2px;
+  perspective: 2px;
+  transition: all 1s ease;
+}
+
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.parallax__layer--fore {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  min-height: 400vh;
+}
+
+.parallax__layer--back {
+  -webkit-transform: translateZ(-2px) scale(2.1);
+  transform: translateZ(-2px) scale(2.1);
+  background: url(../img/earth.jpeg) no-repeat left top fixed;
+  background-size: cover;
+  width: 100%;
+}
+
+.content-transparent {
+  height: 85vh;
+  background-color: transparent;
+}
+.content-opaque {
+  height: 200vh;
+  background-color: #1a1a1a;
+}
