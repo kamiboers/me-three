@@ -1,5 +1,32 @@
+ * { 
+  font-family: Roboto;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 999999;
+  padding-top: 25px;
+ -webkit-transition: all 0.6s ease-in-out;
+ transition: all 0.6s ease-in-out;
+ color:white;
+   box-sizing: border-box;
+
+}
+
+.navbar-transparent {
+  background-color: green;
+  height: 100px;
+  line-height: 50px;
+}
+
+.navbar-opaque {
+  background-color: #2e3338;
+  height: 60px;
+  line-height: 60px;
+}
+
 .page-wrapper {
-  box-sizing: border-box;
   position: relative;
   height: 100%;
   width: 100%;
@@ -42,5 +69,5 @@
 }
 .content-opaque {
   height: 200vh;
-  background-color: #1a1a1a;
+  background-color: #2e3338;
 }
