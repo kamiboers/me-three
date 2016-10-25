@@ -1,29 +1,90 @@
  * { 
-  font-family: Roboto;
+  font-family: 'Roboto';
+}
+
+a, a:visited {
+  color: #eaeaea;
+}
+
+a:hover, a:target, a:focus, a:active {
+  color: #78b3fc;
+}
+
+.clearbox {
+  clear: both;
 }
 
 .navbar {
   position: fixed;
   width: 100%;
   z-index: 999999;
-  padding-top: 25px;
  -webkit-transition: all 0.6s ease-in-out;
- transition: all 0.6s ease-in-out;
- color:white;
-   box-sizing: border-box;
+  transition: all 0.6s ease-in-out;
+  color:white;
+  box-sizing: border-box;
+  display: inline-block;
+}
 
+.navbar-links > ul > li {
+  display: inline-block;
+  margin: 4px 15px 0;
+  font-size: 18px;
+  letter-spacing: 1px;
+    -webkit-animation-duration: 1.4s;
+  -moz-animation-duration: 1.4s;
+  -o-animation-duration: 1.4s;
+  animation-duration: 1.4s;
+    animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+  opacity: 0;
 }
 
 .navbar-transparent {
-  background-color: green;
-  height: 100px;
-  line-height: 50px;
+  height: 90px;
+  line-height: 90px;
+  background-color: #1e1e25;
+  opacity: .75;
 }
 
 .navbar-opaque {
-  background-color: #2e3338;
-  height: 60px;
-  line-height: 60px;
+  background-color: #283039;
+  height: 70px;
+  line-height: 70px;
+}
+
+.navbar-spacer {
+  width: 7%;
+  float: left;
+  height: 100%;
+}
+
+.navbar-brand {
+  width: 55%;
+  float: left;
+  height: 100%;
+  font-size: 50px;
+}
+
+.brand-image {
+  -webkit-animation-duration: 1.2s;
+  -moz-animation-duration: 1.2s;
+  -o-animation-duration: 1.2s;
+  animation-duration: 1.2s;
+    animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+  opacity: 0;
+  margin-top: 5px;
+  width: 260px;
+  -webkit-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+}
+
+.navbar-links {
+  width: 35%;
+  float: left;
+  height: 100%; 
+  font-family: 'Roboto', Helvetica, sans-serif;
+  font-weight: 300;
 }
 
 .page-wrapper {
@@ -33,6 +94,11 @@
   display: block;
   text-align: center;
 }
+
+.parallax::-webkit-scrollbar {
+ display: none;
+}
+
 .parallax {
   min-height: 100vh;
   overflow-x: hidden;
@@ -58,16 +124,102 @@
 .parallax__layer--back {
   -webkit-transform: translateZ(-2px) scale(2.1);
   transform: translateZ(-2px) scale(2.1);
-  background: url(../img/earth.jpeg) no-repeat left top fixed;
+  background: url(../img/mtn1.jpeg) no-repeat left top fixed;
   background-size: cover;
   width: 100%;
 }
 
 .content-transparent {
-  height: 85vh;
+  height: 50vh;
   background-color: transparent;
 }
 .content-opaque {
   height: 200vh;
-  background-color: #2e3338;
+  background-color: #1e1e25;
+}
+
+.hero {
+  font-family: 'Roboto';
+  margin: 25% auto;
+  text-transform: uppercase;
+  opacity: 0;
+  animation-delay: 1s;
+}
+
+.hero > h1 {
+  font-size: 60px;
+  color: #02264b;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.page-down-button:hover {
+  color: #3799fb;
+  border-color: #3799fb;
+}
+
+.page-down-button {
+  color: #02264b;
+  height: 40px;
+  width: 40px;
+  border-radius: 60px;
+  border: 1px solid #02264b;
+  box-sizing: border-box;
+  padding-top: 4px;
+  margin: 25px auto;
+}
+
+.animated-quick {
+  -webkit-animation-duration: 1.5s;
+  -moz-animation-duration: 1.5s;
+  -o-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+}
+.animated-slow {
+  -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s;
+  -o-animation-duration: 2s;
+  animation-duration: 2s;
+    animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+.dropIn {
+  animation-name: dropIn;
+}
+
+@keyframes dropIn {
+  0% {
+    opacity: 0;
+    transform: scale(1, 1) translateY(-900%);
+  }
+
+  70% {
+    opacity: .5;
+    transform: scale(1, 1) translateY(0);
+  }
+  85% {
+    opacity: .8;
+    transform: scale(1, 1) translateY(-10%);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1, 1) translateY(0);
+  }
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }  
+
+  100% {
+    opacity: .8;
+  }
 }
