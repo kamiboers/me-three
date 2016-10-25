@@ -1,5 +1,13 @@
 $( document ).ready(function() {
 
+
+// var sections = ['about','code', 'contact']
+
+// for (var i in sections) {
+//   $('.content-' + sections[i]).load('./partials/' + sections[i] + '.html');
+// }
+
+
   $(".parallax").scroll(function() {      
     if ($('.parallax').scrollTop() > 10) {        
       $('.navbar').removeClass('navbar-transparent').addClass('navbar-opaque');
