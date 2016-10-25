@@ -10,8 +10,10 @@ a:hover, a:target, a:focus, a:active {
   color: #78b3fc;
 }
 
-.clearbox {
-  clear: both;
+.clearfix:after { 
+   content: " ";
+   display: block; 
+   clear: both;
 }
 
 .navbar {
@@ -53,15 +55,14 @@ a:hover, a:target, a:focus, a:active {
 }
 
 .navbar-spacer {
+  height: 100%;
   width: 7%;
   float: left;
-  height: 100%;
 }
 
 .navbar-brand {
   width: 55%;
   float: left;
-  height: 100%;
   font-size: 50px;
 }
 
@@ -82,14 +83,12 @@ a:hover, a:target, a:focus, a:active {
 .navbar-links {
   width: 35%;
   float: left;
-  height: 100%; 
   font-family: 'Roboto', Helvetica, sans-serif;
   font-weight: 300;
 }
 
 .page-wrapper {
   position: relative;
-  height: 100%;
   width: 100%;
   display: block;
   text-align: center;
@@ -130,17 +129,17 @@ a:hover, a:target, a:focus, a:active {
 }
 
 .content-transparent {
-  height: 50vh;
   background-color: transparent;
 }
 .content-opaque {
-  height: 200vh;
+  width: 100%;
+  min-height: 200vh;
+  display: inline-block;
   background-color: #1e1e25;
 }
 
 #waypoint-1 {
   width:100%;
-  height: 10px;
 }
 
 .hero {
@@ -165,7 +164,6 @@ a:hover, a:target, a:focus, a:active {
 
 .page-down-button {
   color: #02264b;
-  height: 40px;
   width: 40px;
   border-radius: 60px;
   border: 1px solid #02264b;
@@ -177,6 +175,18 @@ a:hover, a:target, a:focus, a:active {
 .content-about {
   background-color: #1a1a1a;
   color: #eaeaea;
+}
+
+.headshot {
+  width: 200px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 10px teal;
+}
+.skills-title {
+  font-size: 30px;
+}
+.skills-box {
+  margin: 20px;
 }
 .content-code {
   background-color: #9fb4c6;
@@ -192,10 +202,38 @@ a:hover, a:target, a:focus, a:active {
 }
 
 .content-section {
-  min-height: 80vh;
+  line-height: 1.5;
   width: 100%;
-  padding: 40px;
+  float: left;
+  min-height: 95vh;
+  padding: 80px;
   box-sizing: border-box;
+  display: inline-block;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+.content-section > h1, .col-wide > h1 {
+  font-size: 40px;
+}
+
+.col-narrow {
+  width: 30%;
+  min-height: 40vh;
+  float: left;
+  margin-right: 40px;
+}
+.col-wide {
+  width: 60%;
+  min-height: 40vh;
+  float: left;
+}
+.col-wide > .about-paragraph {
+  margin: 20px auto;
+}
+.icon {
+  width: 50px;
+  margin: 0 20px;
 }
 
 .content-section > h1 {
@@ -259,3 +297,4 @@ a:hover, a:target, a:focus, a:active {
     opacity: .8;
   }
 }
+
