@@ -138,6 +138,11 @@ a:hover, a:target, a:focus, a:active {
   background-color: #1e1e25;
 }
 
+#waypoint-1 {
+  width:100%;
+  height: 10px;
+}
+
 .hero {
   font-family: 'Roboto';
   margin: 25% auto;

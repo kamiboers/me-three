@@ -22,8 +22,17 @@ $( document ).ready(function() {
   })
 
   $('.page-down-button').click(function() {
-    $('.parallax').animate({scrollTop:$(".content-opaque").offset().top}, 1000);
+    pageToAbout();
+  })
+
+  $('#about').click(function() {
+    pageToAbout();
   })
 
 
 });
+
+function pageToAbout() {
+    $('.parallax').animate({scrollTop:$("#waypoint-1").position().top}, 1000);
+    // $('.parallax').animate({scrollTop:$("#waypoint-1").offset().top}, 1000);
+}
