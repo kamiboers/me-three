@@ -281,6 +281,9 @@ a:hover, a:target, a:focus, a:active {
 
 .project-description {
   font-weight: 100;
+  font-size: 18px;
+  line-height: 1.75;
+  margin: 0 20px;
 }
 
 .email, .phone {
