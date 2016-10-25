@@ -17,8 +17,10 @@ $( document ).ready(function() {
 
   $('.page-down-button').hover(function() {
     $('.hero > h1').css('color', '#023364');
+    $('.page-down-button').css('padding-top', '6px');
   }, function() {
     $('.hero > h1').css('color', '#02264b');
+    $('.page-down-button').css('padding-top', '4px');
   })
 
   $('.page-down-button').click(function() {
