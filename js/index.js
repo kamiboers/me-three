@@ -25,14 +25,23 @@ $( document ).ready(function() {
     pageToAbout();
   })
 
-  $('#about').click(function() {
+  $('#link-1').click(function() {
     pageToAbout();
+  })
+  $('#link-2').click(function() {
+    $('.parallax').animate({scrollTop:$("#waypoint-2").position().top-70}, 1000);
+  })
+  $('#link-3').click(function() {
+    $('.parallax').animate({scrollTop:$("#waypoint-3").position().top-70}, 1000);
+  })
+  $('#link-4').click(function() {
+    $('.parallax').animate({scrollTop:$("#waypoint-4").position().top-70}, 1000);
   })
 
 
 });
 
 function pageToAbout() {
-    $('.parallax').animate({scrollTop:$("#waypoint-1").position().top}, 1000);
+    $('.parallax').animate({scrollTop:$("#waypoint-1").position().top-70}, 1000);
     // $('.parallax').animate({scrollTop:$("#waypoint-1").offset().top}, 1000);
 }

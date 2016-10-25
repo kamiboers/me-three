@@ -104,7 +104,7 @@ a:hover, a:target, a:focus, a:active {
   overflow-x: hidden;
   -webkit-perspective: 2px;
   perspective: 2px;
-  transition: all 1s ease;
+  transition: all 1s ease-in-out;
 }
 
 .parallax__layer {
@@ -154,7 +154,7 @@ a:hover, a:target, a:focus, a:active {
 .hero > h1 {
   font-size: 60px;
   color: #02264b;
-  font-weight: 600;
+  font-weight: 400;
   letter-spacing: 2px;
 }
 
@@ -172,6 +172,37 @@ a:hover, a:target, a:focus, a:active {
   box-sizing: border-box;
   padding-top: 4px;
   margin: 25px auto;
+}
+
+.content-about {
+  background-color: #1a1a1a;
+  color: #eaeaea;
+}
+.content-code {
+  background-color: #9fb4c6;
+  color: #1a1a1a;
+}
+.content-portfolio {
+  background-color: #eaeaea;
+  color: #1a1a1a;
+}
+.content-contact {
+  background-color: #1a1a1a;
+  color: #eaeaea;
+}
+
+.content-section {
+  min-height: 80vh;
+  width: 100%;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.content-section > h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 45px;
+  letter-spacing: 1px;
 }
 
 .animated-quick {
