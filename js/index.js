@@ -40,6 +40,22 @@ $( document ).ready(function() {
     $('.parallax').animate({scrollTop:$("#waypoint-4").position().top-70}, 1000);
   })
 
+  /* slide in scroll-to-top-button */
+
+  $('.parallax').scroll(function(){
+    if ($(this).scrollTop() > 500) {
+      $('#page-top-button').fadeIn().removeClass('slide-out-left').addClass('slide-in-left');
+    } else {
+      $('#page-top-button').removeClass('slide-in-left').addClass('slide-out-left').fadeOut();
+    }
+  });
+  
+  /* scroll to top on button click */
+
+  $('#page-top-button').click(function(){
+    $('.parallax').animate({scrollTop : 0},800);
+    return false;
+  });
 
 });
 

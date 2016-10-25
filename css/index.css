@@ -145,7 +145,7 @@ a:hover, a:target, a:focus, a:active {
 
 .hero {
   font-family: 'Roboto';
-  margin: 25% auto;
+  margin: 24% auto;
   text-transform: uppercase;
   opacity: 0;
   animation-delay: 1s;
@@ -220,9 +220,27 @@ a:hover, a:target, a:focus, a:active {
 .code-card {
   width: 33.3333%;
   float: left;
-  min-height: 65vh;
+  min-height: 90vh;
   border-radius: 1px;
   box-shadow: 1px 1px 1px #bfbfbf;
+  box-sizing: border-box;
+  padding: 40px 20px;
+  }
+  .project-img {
+    /*width: 90%;*/
+    max-height: 225px;
+    max-width: 80%;
+
+    border-radius: 5px;
+
+  }
+  .project-links {
+    font-size: 16px;
+    border: 1px solid white;
+    border-top-left-radius: 5px;
+    width: 50%;
+    margin: 15px auto;
+    padding: 10px;
   }
   #code-ex-1 {
     background-color: #0f3357;
@@ -237,10 +255,18 @@ a:hover, a:target, a:focus, a:active {
     color: #eaeaea;
   }
 
+  .divider-line-light {
+  background-color: white;
+  width: 40px;
+  height: 3px;
+  margin: 10px auto;
+}
+
   .code-card > h2 {
-    font-size: 40px;
-    font-weight: 100;
-    margin-top: 20px;
+    font-family: 'Open Sans';
+    font-size: 26px;
+    font-weight: 400;
+    text-transform: uppercase;
   }
 
 .content-portfolio {
@@ -250,6 +276,19 @@ a:hover, a:target, a:focus, a:active {
 .content-contact {
   background-color: #1a1a1a;
   color: #eaeaea;
+  min-height: 50vh;
+}
+
+.project-description {
+  font-weight: 100;
+}
+
+.email, .phone {
+  font-size: 30px;
+  font-weight: 300;
+}
+.email {
+  margin: 20px auto;
 }
 
 
@@ -272,7 +311,7 @@ a:hover, a:target, a:focus, a:active {
   margin: 20px auto;
 }
 .icon {
-  width: 50px;
+  width: 40px;
   margin: 20px 20px 0;
 }
 .icon-container {
@@ -284,6 +323,36 @@ a:hover, a:target, a:focus, a:active {
   font-weight: 400;
   font-size: 45px;
   letter-spacing: 1px;
+}
+
+#page-top-button {
+  box-sizing: border-box;
+  width: 45px; 
+  height: 45px;
+  text-align:center; 
+  background-color: #D2D2D2;
+  padding-top: 15px;
+  color: white;
+  position:fixed;
+  top: 92%;
+  display:none;
+  opacity: .8;
+  z-index: 5;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+#page-top-button:hover {
+  padding-top: 10px;
+}
+
+
+.slide-in-left {
+   right: 40px;
+}
+
+.slide-out-left {
+  right: -100px;
 }
 
 .animated-quick {
