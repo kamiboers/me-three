@@ -220,16 +220,30 @@ a:hover, a:target, a:focus, a:active {
 .code-card {
   width: 33.3333%;
   float: left;
-  min-height: 90vh;
   border-radius: 1px;
   box-shadow: 1px 1px 1px #bfbfbf;
   box-sizing: border-box;
   padding: 40px 20px;
   }
+
+  .code-card-project {
+      min-height: 90vh;
+  }  
+  .code-card-front-end {
+      min-height: 50vh;
+  }
   .project-img {
     /*width: 90%;*/
     max-height: 225px;
     max-width: 80%;
+
+    border-radius: 5px;
+
+  }
+  .portfolio-img {
+    /*width: 90%;*/
+    max-height: 250px;
+    max-width: 100%;
 
     border-radius: 5px;
 
@@ -242,15 +256,15 @@ a:hover, a:target, a:focus, a:active {
     margin: 15px auto;
     padding: 10px;
   }
-  #code-ex-1 {
+  #code-ex-1, #code-ex-6 {
     background-color: #0f3357;
     color: #eaeaea;
   }
-  #code-ex-2 {
+  #code-ex-2, #code-ex-5 {
     background-color: #345488;
     color: #eaeaea;
   }
-  #code-ex-3 {
+  #code-ex-3, #code-ex-4 {
     background-color: #597ec0;
     color: #eaeaea;
   }
