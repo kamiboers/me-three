@@ -61,7 +61,7 @@ a:hover, a:target, a:focus, a:active {
 }
 
 .navbar-brand {
-  width: 55%;
+  width: 65%;
   float: left;
   font-size: 50px;
 }
@@ -81,7 +81,7 @@ a:hover, a:target, a:focus, a:active {
 }
 
 .navbar-links {
-  width: 35%;
+  width: 25%;
   float: left;
   font-family: 'Roboto', Helvetica, sans-serif;
   font-weight: 300;
@@ -117,7 +117,7 @@ a:hover, a:target, a:focus, a:active {
 .parallax__layer--fore {
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
-  min-height: 400vh;
+  /*min-height: 400vh;*/
 }
 
 .parallax__layer--back {
@@ -134,7 +134,7 @@ a:hover, a:target, a:focus, a:active {
 }
 .content-opaque {
   width: 100%;
-  min-height: 200vh;
+  /*min-height: 200vh;*/
   display: inline-block;
   background-color: #1e1e25;
 }
@@ -257,15 +257,15 @@ a:hover, a:target, a:focus, a:active {
     padding: 10px;
   }
   #code-ex-1, #code-ex-6 {
-    background-color: #0f3357;
+    background-color: #36567c;
     color: #eaeaea;
   }
   #code-ex-2, #code-ex-5 {
-    background-color: #345488;
+    background-color: #3e628e;
     color: #eaeaea;
   }
   #code-ex-3, #code-ex-4 {
-    background-color: #597ec0;
+    background-color: #466ea0;
     color: #eaeaea;
   }
 
